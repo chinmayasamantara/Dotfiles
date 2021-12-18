@@ -1,0 +1,15 @@
+for setting time and date in Dwm 
+first of all you have to type in your terminal 
+
+xsetroot -name "$(date)"
+then you have to do this 
+cd .dwm
+nvim .autostart.sh
+then you have to type this 
+while true; do
+        xsetroot -name "$(date'+%y-%m-d% %H:%M:%S')"
+done
+
+
+      
+        
